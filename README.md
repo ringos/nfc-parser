@@ -2,7 +2,7 @@
 
 This repository is the PyTorch implementation of our ACL-2022 [paper]
 
-Source code for ``Investigating Non-local Features for Neural Constituency Parsing''.
+Source code for Investigating Non-local Features for Neural Constituency Parsing.
 
 ## Contents
 1. [Introduction](#Introduction)
