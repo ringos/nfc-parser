@@ -1,0 +1,8 @@
+nltk==3.2
+spacy==2.0.9
+torch==1.6.0
+torch-struct
+tokenizers
+transformers=4.2.2
+protobuf
+sentencepiece
