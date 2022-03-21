@@ -23,7 +23,7 @@ The consistency loss regularizes the co-occurrence between constituents and patt
 
 
 
-, which is an extended version of [Self-Attentive Parser](https://arxiv.org/abs/1805.01052), whose code base is at [this url](https://github.com/nikitakit/self-attentive-parser).
+NFC is an extended version of [Self-Attentive Parser](https://arxiv.org/abs/1805.01052), whose code base is at [this url](https://github.com/nikitakit/self-attentive-parser).
 
 ## Usage
 
