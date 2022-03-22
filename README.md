@@ -32,7 +32,7 @@ To run our code:
 $ pip install -r requirement.txt
 ```
 
-We release our model checkpoints at Google Drive. (Models for [PTB](https://drive.google.com/file/d/1GD-u3CIxRz20bFjhaYGOVJtyt8Patwz-/view?usp=sharing) and for [CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).)
+We release our model checkpoints at Google Drive. (Models for [PTB](https://drive.google.com/file/d/1KUAG1I1H0TEGw-rWM1Xjj-uMlPYsaoPz/view?usp=sharing) and for [CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).)
 
 For test, run
 ```
