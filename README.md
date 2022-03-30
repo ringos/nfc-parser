@@ -1,6 +1,6 @@
 # NFC
 
-This repository is the PyTorch implementation of our ACL-2022 [paper]
+This repository is the PyTorch implementation of our ACL-2022 [paper] (https://arxiv.org/abs/2109.12814)
 
 Source code for Investigating Non-local Features for Neural Constituency Parsing.
 
@@ -51,7 +51,13 @@ If for Chinese, add '''--text-processing chinese''' and change the --pretrained-
 If you use this software for research, please cite our papers as follows:
 
 ```
-
+@inproceedings{nfc,
+    title = "Investigating Non-local Features for Neural Constituency Parsing",
+    author = "Cui, Leyang  and Yang, Sen and Zhang, Yue" ,
+    booktitle = "Proceedings of the 60th Conference of the Association for Computational Linguistics",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
 ```
 
 ## Credits
