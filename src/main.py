@@ -143,11 +143,6 @@ def run_train(args, hparams):
         args.dev_path, args.dev_path_text, args.text_processing
     )
 
-    print("Loading test trees from {}...".format(args.test_path))
-    test_treebank = treebanks.load_trees(
-        args.test_path, args.test_path_text, args.text_processing
-    )
-
     if hparams.max_len_dev > 0:
         dev_treebank = dev_treebank.filter_by_length(hparams.max_len_dev)
     print("Loaded {:,} development examples.".format(len(dev_treebank)))
@@ -302,17 +297,6 @@ def run_train(args, hparams):
 
 
         if dev_fscore.fscore > best_dev_fscore:
-            test_predicted = parser.parse(
-                test_treebank.without_gold_annotations(),
-                subbatch_max_tokens=args.subbatch_max_tokens,
-            )
-            test_fscore = evaluate.evalb(args.evalb_dir, test_treebank.trees, test_predicted)
-
-            print(
-                "test-fscore {} ".format(
-                    test_fscore,
-                )
-            )
             if best_dev_model_path is not None:
                 extensions = [".pt"]
                 for ext in extensions:
@@ -322,8 +306,8 @@ def run_train(args, hparams):
                         os.remove(path)
 
             best_dev_fscore = dev_fscore.fscore
-            best_dev_model_path = "{}_dev={:.2f}_test={:.2f}".format(
-                args.model_path_base, dev_fscore.fscore, test_fscore.fscore
+            best_dev_model_path = "{}_dev={:.2f}".format(
+                args.model_path_base, dev_fscore.fscore
             )
             best_dev_processed = total_processed
             print("Saving new best model to {}...".format(best_dev_model_path))
@@ -525,8 +509,6 @@ def main():
     subparser.add_argument("--train-path-text", type=str)
     subparser.add_argument("--dev-path", default="data/22.auto.clean")
     subparser.add_argument("--dev-path-text", type=str)
-    subparser.add_argument("--test-path", default="data/23.auto.clean")
-    subparser.add_argument("--test-path-text", type=str)
     subparser.add_argument("--text-processing", default="default")
     subparser.add_argument("--subbatch-max-tokens", type=int, default=2000)
     subparser.add_argument("--parallelize", action="store_true")
