@@ -1,6 +1,6 @@
 # NFC
 
-This repository is the PyTorch implementation of our ACL-2022 [paper] (https://arxiv.org/abs/2109.12814)
+This repository is the PyTorch implementation of our ACL-2022 [paper](https://arxiv.org/abs/2109.12814)
 
 Source code for Investigating Non-local Features for Neural Constituency Parsing.
 
@@ -41,7 +41,7 @@ python src/export test \
 ```
 If for Chinese, add '''--text-processing chinese''' and change the --pretrained-model-path. 
 
-We release our model checkpoints at Google Drive. (Models for [PTB](https://drive.google.com/file/d/1GD-u3CIxRz20bFjhaYGOVJtyt8Patwz-/view?usp=sharing) and for [CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).)
+We release our model checkpoints at Google Drive. (Models for [PTB](https://drive.google.com/file/d/1KUAG1I1H0TEGw-rWM1Xjj-uMlPYsaoPz/view?usp=sharing) and for [CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).)
 
 
 
