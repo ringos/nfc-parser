@@ -1,8 +1,7 @@
 # NFC
 
-This repository is the PyTorch implementation of our ACL-2022 [paper](https://arxiv.org/abs/2109.12814)
+This repository contains the PyTorch implementation of the ACL-2022 paper [*Investigating Non-local Features for Neural Constituency Parsing*](https://aclanthology.org/2022.acl-long.146/). 
 
-Source code for Investigating Non-local Features for Neural Constituency Parsing.
 
 ## Contents
 1. [Introduction](#Introduction)
@@ -23,7 +22,7 @@ The consistency loss regularizes the co-occurrence between constituents and patt
 
 
 
-NFC is developed on the basis of [Self-Attentive Parser](https://arxiv.org/abs/1805.01052), whose code base is at [this url](https://github.com/nikitakit/self-attentive-parser).
+
 
 ## Usage
 
@@ -41,7 +40,8 @@ python src/export test \
 ```
 If for Chinese, add '''--text-processing chinese''' and change the --pretrained-model-path. 
 
-We release our model checkpoints at Google Drive. (Models for [PTB](https://drive.google.com/file/d/1KUAG1I1H0TEGw-rWM1Xjj-uMlPYsaoPz/view?usp=sharing) and for [CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).)
+#### Model Checkpoints
+We release our model checkpoints at Google Drive: [model for PTB](https://drive.google.com/file/d/1KUAG1I1H0TEGw-rWM1Xjj-uMlPYsaoPz/view?usp=sharing) and [model for CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).
 
 
 
@@ -88,20 +88,27 @@ $ python src/main.py train \
 
 
 
-## Citation
+## Cite
 
 If you use this software for research, please cite our papers as follows:
 
 ```
-@inproceedings{nfc,
+@inproceedings{cui-etal-2022-investigating,
     title = "Investigating Non-local Features for Neural Constituency Parsing",
-    author = "Cui, Leyang  and Yang, Sen and Zhang, Yue" ,
-    booktitle = "Proceedings of the 60th Conference of the Association for Computational Linguistics",
+    author = "Cui, Leyang  and
+      Yang, Sen  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
     year = "2022",
+    address = "Dublin, Ireland",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.146",
+    doi = "10.18653/v1/2022.acl-long.146",
+    pages = "2065--2075",
 }
 ```
 
 ## Credits
 
-The code in this repository is developed on the basis of the released code from https://github.com/mitchellstern/minimal-span-parser and https://github.com/nikitakit/self-attentive-parser.
+The code in this repository is developed on the basis of the released code from [Minimal Span-based Neural Parser](https://github.com/mitchellstern/minimal-span-parser) and [Self-attentive Parser](https://github.com/nikitakit/self-attentive-parser).
