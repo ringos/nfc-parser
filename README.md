@@ -6,7 +6,7 @@ This repository contains the PyTorch implementation of the ACL-2022 paper [*Inve
 ## Contents
 1. [Introduction](#Introduction)
 2. [Usage](#usage)
-3. [Citation](#citation)
+3. [Cite](#cite)
 4. [Credits](#credits)
 
 ## Introduction
@@ -26,7 +26,7 @@ The consistency loss regularizes the co-occurrence between constituents and patt
 
 ## Usage
 
-### To run our code:
+### Before running the code:
 ```bash
 $ pip install -r requirement.txt
 ```
@@ -38,7 +38,7 @@ python src/export test \
     --model-path path-to-the-checkpoint\
     --test-path path-to-the-test-file
 ```
-If for Chinese, add '''--text-processing chinese''' and change the --pretrained-model-path. 
+If for Chinese, add `--text-processing chinese` and change the `--pretrained-model-path`. 
 
 #### Model Checkpoints
 We release our model checkpoints at Google Drive: [model for PTB](https://drive.google.com/file/d/1KUAG1I1H0TEGw-rWM1Xjj-uMlPYsaoPz/view?usp=sharing) and [model for CTB5.1](https://drive.google.com/file/d/1vpGTii40PgOllAen43CzNNeWprO4fMCn/view?usp=sharing).
